@@ -1,0 +1,22 @@
+Variable_Name,Variable_Type,Variable_Definition
+STUDYID,character,This variable contains the unique identifier for a study. This is the main key/identifier for all domains in the IDDO Data Repository  every domain table will have the STUDYID identifier.
+DOMAIN,character,This variable contains the two-character abbreviation for the domain.
+USUBJID,character,"This variable contains the unique subject identifier for a study. This is a secondary key/identifier for all subject-level domains in the IDDO Data Repository  every domain table containing subject-level information (i.e., all but the Trial Domains) will have the USUBJID identifier. This variable will identify unique subjects in the repository."
+SUBJID,character,This variable contains the unique subject identifier provided by the data contributor.
+RFSTDTC,character,"This variable describes the date and time of the start of the Subject Reference Period. The Subject Reference Period is defined by IDDO as starting with the subject's first study encounter and ending with the subject's final study encounter. RFSTDTC corresponds with the time and date of the subject's first study encounter (e.g., screening, enrollment, admission). This date will be used to calculate the relative days in the --DY?, --STDY, --ENDY variables.  This date and time will be provided in ISO 8601 format. This variable will be blank for submissions that do not provide this initial date. All of the derived variables will also be blank since they are all calculated based on RFSTDTC."
+DTHDTC,character,"This variable describes the date and time of the collection of the observation, administration of a test or collection of a specimen.  This date and time will be provided in ISO 8601 format."
+DTHFL,character,"This variable contains information about whether the subject died during the study period. The variable is expected to be null if the choice is not ""Yes"". "
+SITEID,character,This variable contains information about the study site.
+INVID,character,This variable contains the unique investigator identifier of the data contributor. This may be used for COVID-19 data where many separate investigators have contributed data to a single large study.
+INVNAM,character,This variable contains the clinical trial registry number associated with the subjects record.
+AGE,number,This variable contains the age (expressed in the units described in AGEU) for the subject.
+AGETXT,character,"This variable contains text describing the age of subjects, expressed as a range, at the start of the study. This may be used when no precise age is available."
+AGEU,character,This variable contains the unit describing the value in AGE. This is defined by CDISC Controlled Terminology
+SEX,character,This variable describes the sex of the subject. This is defined by CDISC Controlled Terminology
+RACE,character,This variable describes the race of the subject as provided by the Data Contributor.
+ETHNIC,character,This variable describes the ethnicity of the subject as provided by the Data Contributor.
+ARMCD,character,This variable contains a code that identifies the treatment arm to which ?the subject was assigned.
+ARM,character,This variable describes the treatment arm to which ??the subject was assigned. 
+COUNTRY,character,This variable contains information about the country of the study site described in SITEID. This is defined by Controlled Terminology.
+DMDTC,character,"This variable contains the date and time of the collection of the observation, administration of a test or collection of a specimen.  This date and time will be provided in ISO 8601 format."
+DMDY,number,This variable describes the study day of the observation relative to the date in RFSTDTC.  This will be blank for records with no value in the --DTC variable.
