@@ -1,0 +1,20 @@
+##########
+## TODO ##
+##########
+
+
+## In data_selection ----------------------------------------------
+
+- Relire code
+- "e" à conclud
+- MODIFY ??
+
+- Régler problème du Pandas profile
+- Trier les features avec Pandas profile (corrélation) et save
+
+
+## In project2 -----------------------------------------------------
+
+- Compléter la littérature et expliquer quelle question on se pose
+- Drop les colonnes avec trop de NA et faire régression
+- Garder tout et faire decision tree
