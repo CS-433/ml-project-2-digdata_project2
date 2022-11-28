@@ -2,17 +2,10 @@
 ## TODO ##
 ##########
 
-
-## In data_selection ----------------------------------------------
-
 - Relire code
-- MODIFY ??
-
+- Finir de catégoriser et traiter le dataframe que Sander veut ajouter.
+- Check rapidos les modify
+- Reprendre les numérisations avec les infos d'Annie
 - Régler problème du Pandas profile
-- Trier les features avec Pandas profile (corrélation) et save
-
-
-## In project2 -----------------------------------------------------
-
-- Faire régression
-- Faire modèle qui deal avec NA
+- Commencer le template pour la feature selection
+- Faire les templates pour les modèles dont les manières de voir les performances
