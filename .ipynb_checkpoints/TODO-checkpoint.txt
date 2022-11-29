@@ -2,17 +2,12 @@
 ## TODO ##
 ##########
 
-
-## In data_selection ----------------------------------------------
-
 - Relire code
-- MODIFY ??
-
+- Finir de catégoriser et traiter le dataframe que Sander veut ajouter.
+- Check rapidos les modify
+- Reprendre les numérisations avec les infos d'Annie
+- Verifier meaning test coronavirus ou test sars-cov2
 - Régler problème du Pandas profile
-- Trier les features avec Pandas profile (corrélation) et save
-
-
-## In project2 -----------------------------------------------------
-
-- Faire régression
-- Faire modèle qui deal avec NA
+- Feature selection
+- Faire les templates pour les modèles 5dont les manières de voir les performances)
+- Critiquer feature selection et résultats
