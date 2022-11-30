@@ -2,12 +2,8 @@
 ## TODO ##
 ##########
 
-- Relire code
-- Finir de catégoriser et traiter le dataframe que Sander veut ajouter.
-- Check rapidos les modify
-- Reprendre les numérisations avec les infos d'Annie
-- Verifier meaning test coronavirus ou test sars-cov2
-- Régler problème du Pandas profile
+- Traiter le dataframe que Sander veut ajouter.
 - Feature selection
-- Faire les templates pour les modèles 5dont les manières de voir les performances)
+- Faire les modèles (dont les manières de voir les performances)
 - Critiquer feature selection et résultats
+- Appliquer le meilleur modèle à toutes les data
