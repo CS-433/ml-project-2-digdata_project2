@@ -7,3 +7,21 @@
 - Faire les modèles (dont les manières de voir les performances)
 - Critiquer feature selection et résultats
 - Appliquer le meilleur modèle à toutes les data
+
+
+##################
+## Propositions ##
+##################
+
+### Feature Selection ---------------------------------------------------------------------------------------------------------------------------------------
+
+1. SelectKBest(chi2, k=2) : chi2 ou mutual_info_classif 
+2. Recursive feature elimination (RFE)
+
+### Modèles -------------------------------------------------------------------------------------------------------------------------------------------------
+
+1. Logistic regression ===> from cuml.linear_model.logistic_regression import LogisticRegression
+2. SVM ===> from cuml.svm import SVC
+3. kNN ===> from cuml.neighbors import NearestNeighbors
+4. Decision Trees ===> XGBoost
+5. Neural network ===> pytorch ? Faire simple avec sklearn mais du coup sans cudf ?
