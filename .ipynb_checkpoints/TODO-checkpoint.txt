@@ -1,9 +1,0 @@
-##########
-## TODO ##
-##########
-
-- Traiter le dataframe que Sander veut ajouter.
-- Feature selection
-- Faire les modèles (dont les manières de voir les performances)
-- Critiquer feature selection et résultats
-- Appliquer le meilleur modèle à toutes les data
