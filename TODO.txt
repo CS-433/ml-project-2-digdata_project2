@@ -2,28 +2,24 @@
 ## TODO ##
 ##########
 
-- Run fichiers II et III avec un sample beaucoup plus gros
-- Discussion finale pour feature selection et choisir au final les features
-- Analyser plus en détails les différents modèles (ajustement de paramètres ?)
-- Critiquer feature selection et résultats
+- Features selection
+- Modèles
 - Appliquer le meilleur modèle à toutes les data (faire cross-validation)
 - Conclusion et critiques
 - Faire le README
 
 
-##################
-## Propositions ##
-##################
+####################################################
+## TODO selon les commentaires des profs de lundi ##
+####################################################
 
-### Feature Selection ---------------------------------------------------------------------------------------------------------------------------------------
-
-1. SelectKBest(chi2, k=2) : chi2 ou mutual_info_classif 
-2. Recursive feature elimination (RFE)
-
-### Modèles -------------------------------------------------------------------------------------------------------------------------------------------------
-
-1. Logistic regression ===> from cuml.linear_model.logistic_regression import LogisticRegression
-2. SVM ===> from cuml.svm import SVC
-3. kNN ===> from cuml.neighbors import NearestNeighbors
-4. Decision Trees ===> XGBoost
-5. Neural network ===> pytorch ? Faire simple avec sklearn mais du coup sans cudf ?
+- Investiguer "suspected or proven acute novel COVID-19  infection as main cause of admission"
+- Fill NA avec baseline
+- Feature selection avec le meaning (ex: ne pas prendre pregnant). Commencer par exemple par un modèle plus simple sans treatment puis complexifier ensuite. A chaque fois indiquer les performances.
+- Checker balanced between death or not, dans dataframe initial et sample (peut être choisir 50-50 quand on sample)
+- Garder que 4-5 modèles (logistic, Xboost, etc...) et essayer de jouer avec les hyperparamètres "à la main"
+- Stratification
+- Checker les performance scores (pb sens pred et true, proba au lieu de pred, etc...)
+- Lien entre accuracy et prevalence : regarder la prévalence pour savoir si notre accuracy est correct
+- Ajouter average_precision
+- Ajouter area under the curve / ROC PRC
