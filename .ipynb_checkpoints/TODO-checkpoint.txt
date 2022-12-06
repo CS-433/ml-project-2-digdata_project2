@@ -2,28 +2,9 @@
 ## TODO ##
 ##########
 
-- Run fichiers II et III avec un sample beaucoup plus gros
-- Discussion finale pour feature selection et choisir au final les features
-- Analyser plus en détails les différents modèles (ajustement de paramètres ?)
-- Critiquer feature selection et résultats
-- Appliquer le meilleur modèle à toutes les data (faire cross-validation)
+- Features selection
+- Modèles
+- Aller plus loin avec le meilleur modèle
 - Conclusion et critiques
 - Faire le README
-
-
-##################
-## Propositions ##
-##################
-
-### Feature Selection ---------------------------------------------------------------------------------------------------------------------------------------
-
-1. SelectKBest(chi2, k=2) : chi2 ou mutual_info_classif 
-2. Recursive feature elimination (RFE)
-
-### Modèles -------------------------------------------------------------------------------------------------------------------------------------------------
-
-1. Logistic regression ===> from cuml.linear_model.logistic_regression import LogisticRegression
-2. SVM ===> from cuml.svm import SVC
-3. kNN ===> from cuml.neighbors import NearestNeighbors
-4. Decision Trees ===> XGBoost
-5. Neural network ===> pytorch ? Faire simple avec sklearn mais du coup sans cudf ?
+- Faire Overleaf
