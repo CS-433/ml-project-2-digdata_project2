@@ -8,3 +8,7 @@
 - Conclusion et critiques
 - Faire le README
 - Faire Overleaf
+
+
+Biblio :
+https://towardsdatascience.com/mastering-xgboost-2eb6bce6bc76
