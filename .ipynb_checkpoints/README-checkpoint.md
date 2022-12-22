@@ -22,15 +22,18 @@ The data was pulled from the underlying data collection projects on 2022-09-01. 
 
 First, all of the data has to be downloaded from the link. This includes both the data dictionary file and all of the studies’ data contained in the DATA_2022-09-01 folder. 
 
-There are a few things to do to set up the data correctly. Two files have to be unzipped and put into the DATA_2022-09-01 folder with the others. 
-The data dictionary file is given in the .xlsx, or Excel worksheet format. This file format has to be changed to the .csv or Excel comma-separated-vector one (can be done by opening it in Excel and downloading in the wanted format). The file also has to be renamed by replacing blank spaces by underscores, giving IDDO_SDTM_Data-Dictionary_v3.0_2022-10-06.csv as the final file name. 
+There are a few things to do to set up the data correctly:
+
+- Two files have to be unzipped and put into the DATA_2022-09-01 folder with the others. 
+- The data dictionary file is given in the .xlsx, or Excel worksheet format. This file format has to be changed to the .csv or Excel comma-separated-vector one (can be done by opening it in Excel and downloading in the wanted format). The file also has to be renamed by replacing blank spaces by underscores, giving IDDO_SDTM_Data-Dictionary_v3.0_2022-10-06.csv as the final file name. 
 
 ### 1.3. Repository structure 
 
 For our project files to run smoothly, the repository needs to have a particular architecture to avoid the need to change all of the file paths. It can easily be achieved through the following guidelines :
-If not done already, clone the project repository locally
-In the project’s main directory, create a subdirectory called data and put the data dictionary file and the DATA_2022-09-01 folder in it (do not put the data dictionary file in the DATA_2022-09-01 folder!)
-Within the data subdirectory, create another subdirectory called results. This will be used to store the notebook output results. 
+
+- If not done already, clone the project repository locally
+- In the project’s main directory, create a subdirectory called data and put the data dictionary file and the DATA_2022-09-01 folder in it (do not put the data dictionary file in the DATA_2022-09-01 folder!).
+- Within the data subdirectory, create another subdirectory called results. This will be used to store the notebook output results. 
 
 ## 2. Structure of the project
 
@@ -47,5 +50,10 @@ Stratifies per continent + Pre-process the data (NA, standardization, etc...) + 
 - III_models-and-predictions:
 
 Tests and compares several models (Logistic regression, K-Nearest Neighbour Classifier, Support Vector Machines, Multi-layer perceptrons, Quadratic discriminant analysis and XGBoost) on the matrix extracted from the "II_features-selection" file (training with data from Europe only) + Improves the best models and analyses it + Applies the model to other continents.
+
+/!\ There are two versions of the II and III files: II_feature-selection and II_feature-selection_withINCLAS as well as III_models-and-predictions and III_models-and-predictions_withINCLAS.  
+The distinction between without and with INCLAS is as follows: In the preliminary selection of features according to their meaning in file II, either only INCLAS_VACCINES (without INCLAS) or all INCLAS features (with INCLAS) are kept. The INCLAS features correspond to treatments and interventions.
+
+NB: There is an additional file called "vaccination_investigation". The purpose of this file is to investigate vaccination in more detail following the finding that almost 100% of Africa was vaccinated while only 5% of Europe was vaccinated.
 
 

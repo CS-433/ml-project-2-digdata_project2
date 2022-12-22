@@ -51,4 +51,9 @@ Stratifies per continent + Pre-process the data (NA, standardization, etc...) + 
 
 Tests and compares several models (Logistic regression, K-Nearest Neighbour Classifier, Support Vector Machines, Multi-layer perceptrons, Quadratic discriminant analysis and XGBoost) on the matrix extracted from the "II_features-selection" file (training with data from Europe only) + Improves the best models and analyses it + Applies the model to other continents.
 
+/!\ There are two versions of the II and III files: II_feature-selection and II_feature-selection_withINCLAS as well as III_models-and-predictions and III_models-and-predictions_withINCLAS.  
+The distinction between without and with INCLAS is as follows: In the preliminary selection of features according to their meaning in file II, either only INCLAS_VACCINES (without INCLAS) or all INCLAS features (with INCLAS) are kept. The INCLAS features correspond to treatments and interventions.
+
+NB: There is an additional file called "vaccination_investigation". The purpose of this file is to investigate vaccination in more detail following the finding that almost 100% of Africa was vaccinated while only 5% of Europe was vaccinated.
+
 
